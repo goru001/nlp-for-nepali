@@ -1,0 +1,13 @@
+classification/.ipynb_checkpoints/*
+classification/models
+classification/tmp
+classification/Nepali_News_Classification.csv
+datasets-preparation/.ipynb_checkpoints/*
+datasets-preparation/all_nepali_wikipedia_links.pkl
+datasets-preparation/geckodriver.log
+language-model/.ipynb_checkpoints/*
+language-model/NepaliDataset/*
+language-model/NepaliWikipediaArticles/*
+tokenizer/.ipynb_checkpoints/*
+tokenizer/nepali_lm.model
+tokenizer/nepali_lm.vocab
