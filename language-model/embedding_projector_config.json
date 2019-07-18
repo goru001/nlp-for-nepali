@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Nepali Embedding Vectors",
+      "tensorShape": [
+        15000,
+        400
+      ],
+      "tensorPath": "https://media.githubusercontent.com/media/goru001/nlp-for-nepali/master/language-model/embeddings.tsv",
+      "metadataPath": "https://media.githubusercontent.com/media/goru001/nlp-for-nepali/master/language-model/embeddings_metadata.tsv"
+    }
+  ]
+}
