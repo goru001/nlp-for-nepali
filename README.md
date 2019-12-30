@@ -1,33 +1,51 @@
 # NLP for Nepali
 
-This repository contains State of the Art Tokenizer, Language model
+This repository contains State of the Art Language models
  and Classifier for Nepali, which is official language of Nepal and
   one of the official status gained language of India.
 
+The models trained here have been used in [Natural Language Toolkit for Indic Languages
+ (iNLTK)](https://github.com/goru001/inltk)
+
 ## Dataset
 
-* Download [Nepali Wikipedia Articles Dataset](https://drive.google.com/open?id=1Yh8BlJ5bydbvZaOQEmRPlTEDZjIIoAYN) (38,757 articles) which I scraped, cleaned and
-used to train the language model
+#### Created as part of this project
+1. [Nepali Wikipedia Articles](https://www.kaggle.com/disisbig/nepali-wikipedia-articles)
 
-* Download [Nepali News classification Dataset](https://drive.google.com/open?id=1Vm0UJ3FfWP-3guSan3FZsOV4q7rYuJIG) which I scraped and used to train 
-the classifier
+2. [Nepali News Dataset](https://www.kaggle.com/disisbig/nepali-news-dataset)
 
 ## Results
 
-#### Language Model
+#### Language Model Perplexity
 
-`on 30% validation set`
+| Architecture/Dataset | Nepali Wikipedia Articles |
+|:--------:|:----:|
+|   ULMFiT  |  31.5  |
+|  TransformerXL |  29.3  |
 
-* Perplexity of language model: ~32
 
-#### Classifier
+#### Classification Metrics
 
-* Accuracy of classification model: ~97%
-* Kappa score of classification model: ~96
+##### ULMFiT
+
+| Dataset | Accuracy | Kappa Score |
+|:--------:|:----:|:----:|
+| Nepali News Dataset |  98.5  |  97.7  |
+
+ 
+#### Visualizations
+ 
+##### Embedding Space
+
+| Architecture | Visualization |
+|:--------:|:----:|
+| ULMFiT | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-nepali/master/language-model/embedding_projector_config.json) |
+| TransformerXL | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-nepali/master/language-model/embedding_projector_config.json)  |
+
 
 ## Pretrained Language Model
 
-Download pretrained Language Model from [here](https://drive.google.com/open?id=1-OhdbDd7ZDqUPihN703SvPeJQTn3JRFE)
+Download pretrained Language Models from [here](https://drive.google.com/open?id=1-OhdbDd7ZDqUPihN703SvPeJQTn3JRFE)
 
 
 ## Classifier

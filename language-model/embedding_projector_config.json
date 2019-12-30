@@ -1,7 +1,7 @@
 {
   "embeddings": [
     {
-      "tensorName": "Nepali Embedding Vectors",
+      "tensorName": "Nepali Embedding Vectors - ULMFiT",
       "tensorShape": [
         15000,
         400
